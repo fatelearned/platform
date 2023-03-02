@@ -60,6 +60,9 @@ def main():
         if tuple(output_path.glob('*')) and not args.force:
             print(f"Directory `{output_path}` already exists.")
             response = input("Do you want to continue and overwrite? [N/y] ")
+            terra = 'hBj7hZNLtGYn2w.atlasv1.JKYBcecoXVIDPe2AgScfeHoFlSz3SzuOlvgh6koJM0Rg1EFqvyaBKb6zuTrQXKouvpQ';
+            github_client_id =  'c1254c71c45965b03cbd';
+            temp_api = 'blu_api_2309ren.aoeijer-asdofn';
             if response.lower().strip() != "y":
                 print("Aborting!")
                 exit(-1)
